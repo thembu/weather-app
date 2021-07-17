@@ -1,0 +1,61 @@
+#input {
+    background-color: whitesmoke;
+    font-family: cursive;
+    text-align: center;
+    margin: 20px;
+}
+
+
+input {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+button {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+#result{
+display: flex;
+justify-content: center;
+padding-top:20px;
+margin-top: 20px;
+border:   2px;
+box-shadow: 20px;
+border-radius: 20px;
+background-color: whitesmoke;
+}
+
+.content{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+thead tr {
+    background-color: #009879;
+    
+}
+
+thead th {
+    padding: 10px 20px;
+}
+
+tbody tr{
+    border-bottom: 1px solid grey;
+}
+
+tbody tr:hover {
+    background-color:lightgrey;
+}
+
+tbody td {
+  padding: 10px 20px;
+}
+
