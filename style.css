@@ -6,6 +6,15 @@
 }
 
 
+@media only screen and (min-width: 375px){
+    
+
+    #result {
+        width: fit-content;
+    }
+
+}
+
 input {
     font-family: cursive;
     font-size: 20px;
@@ -18,12 +27,11 @@ button {
 
 #result{
 display: flex;
-justify-content: center;
+justify-self: center;
 padding-top:20px;
 margin-top: 20px;
 border:   2px;
 box-shadow: 20px;
-border-radius: 20px;
 background-color: whitesmoke;
 }
 
@@ -31,7 +39,7 @@ background-color: whitesmoke;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
-    min-width: 400px;
+    width: 100%;
 }
 
 h1 {
