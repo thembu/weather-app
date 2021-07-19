@@ -1,9 +1,11 @@
 #input {
     background-color: whitesmoke;
-    font-family: cursive;
+    font-family: monospace;
     text-align: center;
     margin: 20px;
 }
+
+
 
 
 @media only screen and (min-width: 320px){
@@ -21,7 +23,7 @@ input {
 }
 
 button {
-    font-family: cursive;
+    font-family: monospace;
     font-size: 20px;
 }
 
@@ -33,6 +35,7 @@ margin-top: 20px;
 border:   2px;
 box-shadow: 20px;
 background-color: whitesmoke;
+font-family: monospace;
 }
 
 .content{
