@@ -10,7 +10,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=f1
 	<h1> ${data.name} conditions </h1>
 	<hr>
 	<table class = "content">
-	<thead>
+	<thead >
 	<tr>
 	<th>NAME</th>
 	<th> HUMIDITY </th>
@@ -23,13 +23,13 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=f1
 	<thead>
 	<tbody>
 	<tr>
-	<td>${data.name}</td>
-	<td> ${data.main.humidity}</td>
-	<td> ${data.weather[0].description}</td>
-	<td> ${Math.round(data.main.temp - 273.15)} </td>
-	<td> ${data.wind.speed} </td>
-	<td> ${data.main.pressure}</td>
-	<td> ${data.weather[0].main}
+	<td data-label = "NAME">${data.name}</td>
+	<td data-label = "HUMIDITY"> ${data.main.humidity}</td>
+	<td data-label = "DESCRIPTION"> ${data.weather[0].description}</td>
+	<td data-label = "TEMP"> ${Math.round(data.main.temp - 273.15)} </td>
+	<td data-label = "WIND SPEED"> ${data.wind.speed} </td>
+	<td data-label = "PRESSURE"> ${data.main.pressure}</td>
+	<td data-label = "SKY"> ${data.weather[0].main}
 	</tr>
 	</table>
 	

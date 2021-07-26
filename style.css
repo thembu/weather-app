@@ -8,12 +8,51 @@
 
 
 
-@media only screen and (min-width: 320px){
+@media only screen and (min-width: 320px),( min-height: 568px){
     
 
     #result {
         width: fit-content;
     }
+
+    .content{
+        width: 100%;
+        font-size: 0.2rem;
+        border:2px;
+    }
+
+
+    table  th{
+        display: none;
+    }
+
+
+    tbody tr td {
+        display: block;
+        padding-left: 100px;
+        background-color: white;
+        width: 100px;
+    }
+    
+
+    td{
+        text-align: right;
+    }
+
+    td::before {
+        content:attr(data-label);
+        position: absolute;
+        left: 0;
+        padding-left: 110px;
+        
+    }
+
+
+    h1{
+        font-size: 1rem;
+    }
+
+   
 
 }
 
@@ -42,7 +81,6 @@ font-family: monospace;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
-    width: 100%;
 }
 
 h1 {
@@ -62,9 +100,6 @@ tbody tr{
     border-bottom: 1px solid grey;
 }
 
-tbody tr:hover {
-    background-color:lightgrey;
-}
 
 tbody td {
   padding: 10px 20px;
