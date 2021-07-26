@@ -43,13 +43,13 @@
         content:attr(data-label);
         position: absolute;
         left: 0;
-        padding-left: 110px;
+        padding-left: 20px;
         
     }
 
 
     h1{
-        font-size: 1rem;
+        display: none;
     }
 
    
