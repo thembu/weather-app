@@ -8,7 +8,7 @@
 
 
 
-@media only screen and (min-width: 320px),( min-height: 568px){
+@media only screen and (max-width: 320px),( max-height: 568px){
     
 
     #result {
