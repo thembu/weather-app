@@ -6,6 +6,100 @@
 }
 
 
+@media only screen and(max-width: 414px),(max-height : 736px){
+    #result {
+        width: fit-content;
+    }
+
+    .content{
+        width: 100%;
+        font-size: 0.2rem;
+        border:2px;
+    }
+
+
+    table  th{
+        display: none;
+    }
+
+
+    tbody tr td {
+        display: block;
+        padding-left: 100px;
+        background-color: white;
+        width: 100px;
+    }
+    
+
+    td{
+        text-align: right;
+    }
+
+    td::before {
+        content:attr(data-label);
+        position: absolute;
+        left: 0;
+        padding-left: 20px;
+        
+    }
+
+
+    h1{
+        display: none;
+    }
+
+   
+
+}
+
+
+@media only screen and(max-width: 375px),(max-height : 667px){
+    #result {
+        width: fit-content;
+    }
+
+    .content{
+        width: 100%;
+        font-size: 0.2rem;
+        border:2px;
+    }
+
+
+    table  th{
+        display: none;
+    }
+
+
+    tbody tr td {
+        display: block;
+        padding-left: 100px;
+        background-color: white;
+        width: 100px;
+    }
+    
+
+    td{
+        text-align: right;
+    }
+
+    td::before {
+        content:attr(data-label);
+        position: absolute;
+        left: 0;
+        padding-left: 20px;
+        
+    }
+
+
+    h1{
+        display: none;
+    }
+
+   
+
+}
+
+
 
 
 @media only screen and (max-width: 320px),( max-height: 568px){
