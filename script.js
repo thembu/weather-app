@@ -2,7 +2,7 @@ let input = document.getElementById('city');
 
 let submitContent = () => {
 
-fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=f10bfe1d0632bfeca9c074f70735b293`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=c55a230d3fa6174c77ed47f85991f9b8`)
 .then((res) => res.json())
 .then((data) => {
 
