@@ -3,10 +3,10 @@ let result;
 
 let submitContent = () => {
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=db55fd495de05a4013318dac00c8b2ae`)
-        .then((res) => res.json())
-        .then((data) => {
-            result = `
+	fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=db55fd495de05a4013318dac00c8b2ae`)
+		.then((res) => res.json())
+		.then((data) => {
+			result = `
            <div id="container">
             <header id="banner"><h1>${data.name} Conditions</h1></header>
             <main id="content">
@@ -22,9 +22,9 @@ let submitContent = () => {
             </main>
              </div>
              `
-            document.getElementById('result').innerHTML = result
-        })
-        .catch((err) => {
-            document.getElementById('result').innerHTML = 'enter a real city 😑'
-        })
+			document.getElementById('result').innerHTML = result
+		})
+		.catch((err) => {
+			document.getElementById('result').innerHTML = 'enter a real city 😑'
+		})
 }
