@@ -1,6 +1,5 @@
 nav {
-    display: flex;
-    justify-content: center;
+    padding-left:200px;
     background-color: whitesmoke;
 }
 
@@ -46,6 +45,9 @@ ul{
     height: 100%;
 }
 
+caption {
+    margin-top:30px;
+}
 
 @media only screen and(max-width: 375px),(max-height: 667px) {
 

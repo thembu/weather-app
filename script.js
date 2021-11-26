@@ -7,19 +7,33 @@ let submitContent = () => {
 		.then((res) => res.json())
 		.then((data) => {
 			result = `
-           <div id="container">
-            <header id="banner"><h1>${data.name} Conditions</h1></header>
-            <main id="content">
-            <div id="icon"><img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" height = '100px' width = '100px' alt="icon here"></div>
-            <div id="weather">
-            <ul>
-            <li> Descripion :${data.weather[0].description}</li>
-            <li> Humidty : ${data.main.humidity}</li>
-            <li> Temperature :${Math.round(data.main.temp - 273.15)}</li>
-            <li> Clouds : ${data.weather[0].main}</li>
-          </ul>
+
+             <caption>${data.name} Condtions</caption>
+
+           <div class="table-responsive">
+           <table class="table">
+             <thead>
+                <th>Place</th>
+                <th>Description</th>
+                <th>Humidity</th>
+                <th>Temperature</th>
+                <th>Clouds</th>
+                <th>Conditons</th>
+             </thead>
+             <tbody>
+              <tr class="success">
+            <td>${data.name}</td>
+            
+            <td> ${data.weather[0].description}</td>
+            <td> ${data.main.humidity}</td>
+            <td> ${Math.round(data.main.temp - 273.15)}</td>
+            <td> ${data.weather[0].main}</td>
+            <td><img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" height = '100px' width = '100px' alt="icon here"></td>
+            </tr>
             </div>
             </main>
+            </tbody>
+            </table>
              </div>
              `
 			document.getElementById('result').innerHTML = result
