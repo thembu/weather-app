@@ -36,6 +36,7 @@ let submitContent = () => {
             </table>
              </div>
              `
+			console.log(data)
 			document.getElementById('result').innerHTML = result
 		})
 		.catch((err) => {
